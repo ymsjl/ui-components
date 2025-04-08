@@ -1,0 +1,47 @@
+.c-card {
+  position: relative;
+
+  display: grid;
+
+  transition: transform 550ms ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.c-card__face {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+  border: 1px solid #353535;
+  border-radius: 2.5rem;
+  padding: 3rem 2rem;
+
+  color: #fff;
+  background-color: #000000;
+
+  transition: transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.c-card__face--front {
+  z-index: 2;
+}
+
+.c-card__face--back {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  transform: rotateY(180deg);
+}
+
+/* .c-card__face--back.c-card__face--flipped {
+  position: static;
+} */
+
+.is-flipped {
+  transform: rotateY(180deg);
+}

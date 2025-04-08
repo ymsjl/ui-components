@@ -1,0 +1,71 @@
+.c-card__text-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.c-card__title {
+  overflow: hidden;
+
+  margin-bottom: 1rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-card__desc {
+  overflow: hidden;
+
+  flex: 1 1 3em;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  font-size: .9rem;
+  line-height: 1.5;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.c-card__text-wrapper--back {
+  text-align: center;
+}
+
+.c-card__desc--back {
+  overflow: unset;
+  flex-basis: auto;
+  -webkit-line-clamp: unset;
+}
+
+.c-card__source {
+  overflow: hidden;
+
+  margin-top: 1rem;
+
+  font-size: .8rem;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-card__image-wrapper {
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  margin-left: 2rem;
+  border-radius: 1.25rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.c-card__avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
