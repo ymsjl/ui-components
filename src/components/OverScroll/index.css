@@ -1,0 +1,37 @@
+/* 滚动容器基础样式 */
+.scrollable-wrapper {
+  position: relative;
+  max-height: 500px;
+  background-color: blue;
+  margin-right: -17px;
+}
+
+/* 滚动指示器伪元素共享样式 */
+.scrollable-wrapper:before,
+.scrollable-wrapper:after {
+  position: absolute;
+  left: 50%;
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffffff9f;
+  transform: translateX(-50%);
+}
+
+/* 顶部指示器 */
+.scrollable-wrapper:before {
+  top: 0;
+  content: 'TOP';
+}
+
+/* 底部指示器 */
+.scrollable-wrapper:after {
+  bottom: 0;
+  content: 'BOTTOM';
+}
+
+/* 内容容器 */
+.scrollable-inner {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,32 @@
+.swipeout-container {
+    border: 1px solid #ccc;
+}
+
+.swipeout-content {
+    padding: 24px;
+    user-select: none;
+}
+
+.label {
+    line-height: 2;
+    padding: 0 12px;
+    background-color: rgb(255, 255, 134);
+}
+
+.bg-red {
+    color: white;
+    background-color: rgb(228, 27, 27);
+}
+
+.bg-blue {
+    color: white;
+    background-color: rgb(112, 112, 212);
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: wheat;
+}
