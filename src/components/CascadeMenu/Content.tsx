@@ -1,10 +1,15 @@
 import React from "react";
 import { useInstanceListRef } from "./useInstanceListRef";
 
+export type SectionItemRender<T = any> = (
+  item: T,
+  index: number
+) => React.ReactNode;
+
 // 定义组件的属性类型
 interface ContentProps<T = any> {
   sections: T[];
-  sectionItemRender?: (item: T, index: number) => React.ReactNode;
+  sectionItemRender?: SectionItemRender<T>;
 }
 
 const Content = React.forwardRef<HTMLElement[], ContentProps>(

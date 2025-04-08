@@ -14,6 +14,9 @@ const meta = {
     onScrollOverDown: { action: "scrolled over down" },
     disableScroll: { control: "boolean" },
   },
+  parameters: {
+    layout: "fullscreen",
+  },
 } satisfies Meta<typeof OverScroll>;
 
 export default meta;
@@ -82,9 +85,8 @@ export const Default: Story = {
     docs: {
       description: {
         story:
-          "一个基于 react 实现的能够让内容滚动到尽头依然能够滚动一段距离，并且附带回弹效果的滚动组件，类似移动设备上触摸滚动到底部的弹性效果。",
+          "一个能够让内容滚动到尽头依然能够滚动一段距离，并且附带回弹效果的滚动组件，类似移动设备上触摸滚动到底部的弹性效果。",
       },
     },
-    layout: "fullscreen",
   },
 };

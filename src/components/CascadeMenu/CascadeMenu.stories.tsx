@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import CascadeMenu from ".";
 import { NavItemRender } from "./Nav";
+import { SectionItemRender } from "./Content";
 import "./CascadeMenu.stories.css";
 
 const sectionsLenght = 20;
@@ -35,7 +36,7 @@ const sectionsData = Array.from({ length: sectionsLenght }).map((_, index) => ({
 
 type SectionItem = (typeof sectionsData)[number];
 
-const sectionItemRender = (item: SectionItem, index: number) => (
+const sectionItemRender: SectionItemRender = (item:SectionItem, index) => (
   <>
     <header className="sectionHeader">{item.title}</header>
     <div className="sectionBody">
@@ -56,7 +57,7 @@ const sectionItemRender = (item: SectionItem, index: number) => (
   </>
 );
 
-const navItemRender: NavItemRender<SectionItem> = (item, index, isActived) => (
+const navItemRender: NavItemRender = (item: SectionItem, index, isActived) => (
   <div className={`navItem ${isActived && "navItemActived"}`}>
     {item.shortName}
   </div>

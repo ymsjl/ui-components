@@ -6,7 +6,7 @@ export type NavItemClickHandler = (
   index: number
 ) => void;
 
-export type NavItemRender<T> = (
+export type NavItemRender<T=any> = (
   item: T,
   index: number,
   isActive: boolean

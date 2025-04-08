@@ -1,12 +1,12 @@
 import React from "react";
-import Nav, { NavItemClickHandler } from "./Nav";
-import Content from "./Content";
+import Nav, { NavItemClickHandler, NavItemRender } from "./Nav";
+import Content, { SectionItemRender } from "./Content";
 import "./index.css";
 
 export interface CascadeMenuProps<T = any> {
   sections: T[];
-  sectionItemRender?: (item: T, index: number) => React.ReactNode;
-  navItemRender: (item: T, index: number, isActive: boolean) => React.ReactNode;
+  sectionItemRender?: SectionItemRender<T>;
+  navItemRender: NavItemRender<T>;
 }
 
 function CascadeMenu<T = any>({

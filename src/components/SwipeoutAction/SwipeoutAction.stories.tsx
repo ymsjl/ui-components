@@ -64,17 +64,38 @@ export const NoAction: Story = {
   args: {
     children: SAMPLE_TEXT,
   },
+  parameters: {
+    docs: {
+      description: {
+        story: "SwipeoutAction 组件的默认状态，没有任何操作按钮。",
+      },
+    },
+  },
 };
 
 export const RightAction: Story = {
   args: {
     rightBtnsProps: [DELETE_BUTTON_PROPS],
   },
+  parameters: {
+    docs: {
+      description: {
+        story: "右划会拖出一个删除按钮",
+      },
+    },
+  },
 };
 
 export const LeftAction: Story = {
   args: {
     leftBtnsProps: [MARK_BUTTON_PROPS],
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "左划会拖出一个标记按钮",
+      },
+    },
   },
 };
 
@@ -83,11 +104,25 @@ export const BothSidesActions: Story = {
     leftBtnsProps: [MARK_BUTTON_PROPS],
     rightBtnsProps: [DELETE_BUTTON_PROPS],
   },
+  parameters: {
+    docs: {
+      description: {
+        story: "左右划都会拖出按钮",
+      },
+    },
+  },
 };
 
 export const MultipleRightButtons: Story = {
   args: {
     rightBtnsProps: [MARK_BUTTON_PROPS, MORE_BUTTON_PROPS, DELETE_BUTTON_PROPS],
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "右侧有多个按钮。",
+      },
+    },
   },
 };
 
@@ -95,5 +130,12 @@ export const MultipleBothSidesButtons: Story = {
   args: {
     leftBtnsProps: [DELETE_BUTTON_PROPS, MORE_BUTTON_PROPS, MARK_BUTTON_PROPS],
     rightBtnsProps: [MARK_BUTTON_PROPS, MORE_BUTTON_PROPS, DELETE_BUTTON_PROPS],
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: "左右两侧都有多个按钮。",
+      },
+    },
   },
 };
