@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import "./index.css";
+import cls from "classnames";
 
 export const Zoom: FC = ({}) => {
   const [isTripped, setIsTripped] = useState(false);
@@ -18,9 +19,10 @@ export const Zoom: FC = ({}) => {
   return (
     <div className="card">
       <div
-        className={`box back flex-center-column ${
-          isTripped ? "out-back" : "in-back"
-        }`}
+        className={cls("box back flex-center-column", {
+          "out-back": isTripped,
+          "in-back": !isTripped,
+        })}
         onClick={onBackClick}
         onAnimationEnd={() => setIsAnimationEnd(true)}
         hidden={isAnimationEnd && !isTripped}
@@ -28,7 +30,10 @@ export const Zoom: FC = ({}) => {
         BACK
       </div>
       <div
-        className={`box front flex-center-column ${isTripped ? "out" : "in"}`}
+        className={cls("box front flex-center-column", {
+          out: isTripped,
+          in: !isTripped,
+        })}
         onClick={onFrontClick}
         onAnimationEnd={() => setIsAnimationEnd(true)}
         hidden={isAnimationEnd && isTripped}

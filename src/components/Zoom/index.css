@@ -14,11 +14,13 @@
 
 .front {
   background-color: rgb(59, 59, 218);
+  -webkit-text-stroke-color: #FFFFFF;
 }
 
 .back {
   background-color: rgb(245, 245, 125);
   opacity: 0;
+  -webkit-text-stroke-color: #1A2B3C;
 }
 
 .box {
@@ -30,7 +32,7 @@
 
   padding: 12px;
   color: transparent;
-  -webkit-text-stroke: 1px #1a2b3c;
+  -webkit-text-stroke-width: 1px;
   font-size: 48px;
   font-weight: 800;
 }

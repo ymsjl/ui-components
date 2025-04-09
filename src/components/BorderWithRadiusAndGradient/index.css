@@ -8,7 +8,7 @@
    margin: auto;
    border: solid 10px transparent;
    /* 关键，将尺寸撑开，让底部的背景图像能被显示*/
-   border-radius: 18px;
+   border-radius: 99999px;
    /* 内部的圆角 */
    padding: 10px;
 
@@ -36,6 +36,6 @@
    background: linear-gradient(to bottom, orange, red);
    /* 边框的渐变效果 */
 
-   border-radius: 15px;
+   border-radius: 99999px;
    /* 边框圆角要比内部圆角略小 */
  }
