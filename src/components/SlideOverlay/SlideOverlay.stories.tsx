@@ -1,25 +1,23 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Zoom } from "./index";
+import SlideOverlay from "./index";
 
 const meta = {
-  title: "Components/Zoom 镜头推拉",
-  component: Zoom,
+  title: "Components/SlideOverlay 滑动覆盖组件",
+  component: SlideOverlay,
   tags: ["autodocs"],
   parameters: {
-    layout: "centered",
+    layout: "fullscreen",
   },
-  args: {},
-} satisfies Meta<typeof Zoom>;
+} satisfies Meta<typeof SlideOverlay>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
   parameters: {
     docs: {
       description: {
-        story: "模仿镜头推拉的动画效果",
+        story: "一个可以上下滑动的覆盖组件。",
       },
     },
   },

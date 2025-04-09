@@ -64,7 +64,7 @@ const navItemRender: NavItemRender = (item: SectionItem, index, isActived) => (
 );
 
 const meta = {
-  title: "Components/CascadeMenu",
+  title: "Components/CascadeMenu 级联菜单",
   component: CascadeMenu,
   tags: ["autodocs"],
 } satisfies Meta<typeof CascadeMenu>;

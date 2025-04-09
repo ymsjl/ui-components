@@ -46,7 +46,7 @@ const MORE_BUTTON_PROPS = {
 };
 
 const meta = {
-  title: "Components/SwipeoutAction",
+  title: "Components/SwipeoutAction 滑动操作",
   component: SwipeoutAction,
   tags: ["autodocs"],
   parameters: {

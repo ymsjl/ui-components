@@ -1,25 +1,23 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Zoom } from "./index";
+import { Moving } from "./Moving";
 
 const meta = {
-  title: "Components/Zoom 镜头推拉",
-  component: Zoom,
+  title: "Components/Moving 可移动组件",
+  component: Moving,
   tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },
-  args: {},
-} satisfies Meta<typeof Zoom>;
+} satisfies Meta<typeof Moving>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
   parameters: {
     docs: {
       description: {
-        story: "模仿镜头推拉的动画效果",
+        story: "一个可以拖动的组件。",
       },
     },
   },

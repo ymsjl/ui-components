@@ -19,7 +19,7 @@ const texts = [
 ];
 
 const meta: Meta<typeof FilpCard> = {
-  title: "Components/FilpCard",
+  title: "Components/FilpCard 翻转卡片",
   component: FilpCard,
   args: {
     frontSurfaceRender: () => (
@@ -62,6 +62,11 @@ const meta: Meta<typeof FilpCard> = {
   },
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        story: "FilpCard 展示卡片反转效果",
+      },
+    },
   },
   tags: ["autodocs"],
 };

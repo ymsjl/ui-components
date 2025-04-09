@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./OverScroll.stories.css"; // 引入样式文件
 
 const meta = {
-  title: "Components/OverScroll",
+  title: "Components/OverScroll 超出滚动",
   component: OverScroll,
   tags: ["autodocs"],
   argTypes: {
